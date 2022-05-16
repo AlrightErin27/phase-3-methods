@@ -1,22 +1,29 @@
-# Your code here!
+# def my_function(param)
+#   print 'Running my_function'
+#   return param.to_i + 1
+# end
+# print my_function('2')
 
 def greet_programmer
-    print "Hello, programmer!"
+  print 'Hello, programmer!'
 end
 
 def greet(name)
-    print "Hello, #{name}!"
+  print "Hello, #{name}!"
 end
 
-def greet_with_default(name = "programmer")
-    print "Hello, #{name}!"
+def greet_with_default(name = 'programmer')
+  print "Hello, #{name}!"
 end
 
-def add(a, b)
-   a + b
+def add(num_1, num_2)
+  return num_1 + num_2
 end
 
-def halve(a)
-    return nil unless a.class == Integer
-    a/2
+def halve(int)
+  if int.class != Integer
+    return nil
+  else
+    return int / 2
+  end
 end
